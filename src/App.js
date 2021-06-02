@@ -36,8 +36,10 @@ function App() {
 
             <table className="table bordered-table table-striped">
               <thead>
-                <th>Nombre</th>
-                <th>Apellido</th>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                </tr>
               </thead>
               <tbody>
               {guestList.map((guest) => (
