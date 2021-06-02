@@ -18,7 +18,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-sm-6 col-sm-offset-3">
-            <form>
+            <form onSubmit={(event)=>addGuestToList(event)}>
               <div className="form-group">
                 <label htmlFor="first-name">Nombre</label>
                 <input onChange={(event)=>setName(event.target.value)} type="text" className="form-control" name="first-name" value={name} />
@@ -30,7 +30,7 @@ function App() {
               </div>
 
               <div className="action">
-                <button onClick={(event)=>addGuestToList(event)} type="submit" className="btn btn-primary">Agregar Invitado</button>
+                <button type="submit" className="btn btn-primary">Agregar Invitado</button>
               </div>
             </form>
 
